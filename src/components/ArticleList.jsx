@@ -1,12 +1,10 @@
 import Article from "./Article";
-function ArticleList() {
+function ArticleList(props) {
   return (
     <div>
       <h2>Vores artikler</h2>
       <div className="grid">
-        <Article />
-        <Article />
-        <Article />
+{props.articles.map((article) => <Article header={article.header} content={article.content}/>)}
       </div>
     </div>
   );

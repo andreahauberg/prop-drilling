@@ -3,7 +3,7 @@ function Footer(data) {
     <footer>
       <p>
         Her er en meget standard footer hvor jeg gerne vil vise
-        {data.contactInfo.email}
+        ({data.contactInfo.email})
       </p>
     </footer>
   );
